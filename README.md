@@ -11,3 +11,5 @@ This is a small mood tracker application which is purely built on HTML, CSS and 
 ### Deployment link 
 [Mood tracker](https://mood-tracker-murex.vercel.app/)
 
+![image](https://github.com/user-attachments/assets/6c32151c-7ba1-487d-9c22-c1c9ba2178b9)
+
