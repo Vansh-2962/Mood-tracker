@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mood Tracker</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- We are using the Full Calendar library here. -->
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.15/index.global.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.11.3/locales-all.min.js"></script>
+  </head>
+  <body>
+    <main class="container">
+      <!-- This is the header -->
+      <section class="header">
+        <h1>Mood Tracker</h1>
+        <small>Track your emotional journey, one day at a time</small>
+      </section>
+
+      <div class="main">
+        <!-- This is the Mood emoji container -->
+        <section class="mood-container">
+          <h3>How are you feeling today ?</h3>
+          <div class="emoji-container">
+            <button draggable="true">
+              <span class="emoji">😀</span> Happy
+            </button>
+            <button draggable="true"><span class="emoji">🥲</span> Sad</button>
+            <button draggable="true">
+              <span class="emoji">😐</span> Neutral
+            </button>
+            <button draggable="true">
+              <span class="emoji">🤩</span> Excited
+            </button>
+            <button draggable="true">
+              <span class="emoji">😴</span> Tired
+            </button>
+            <button draggable="true">
+              <span class="emoji">😡</span> Angry
+            </button>
+            <button draggable="true">
+              <span class="emoji">😌</span> Peaceful
+            </button>
+            <button draggable="true">
+              <span class="emoji">🤔</span> Thoughtful
+            </button>
+          </div>
+        </section>
+
+        <!-- This is the mood tracker section  -->
+        <section class="mood-tracker">
+          <div class="timeline-header">
+            <h3>Mood timeline</h3>
+          </div>
+          <!-- moods -->
+          <!-- <div class="mood">
+          <span class="emoji">🤔</span>
+          <div>
+            <p>Thoughtful</p>
+            <small>Date</small>
+          </div>
+        </div> -->
+          <div id="calendar"></div>
+        </section>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
